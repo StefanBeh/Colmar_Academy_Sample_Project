@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+    border: 0px;
+    border-color: red;
+    border-style: solid;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    nav {
+        height: 82px;
+        display: flex;
+        align-items: center;
+        margin-left: 24px;
+        margin-right: 24px;
+        justify-content: space-between;
+    }
+    nav div{
+        display: flex;
+        align-items: center;
+    }
+    nav img{
+        height: 70px;
+    }
+    #one {
+        font-size: 32px;
+        font-weight: 700;
+        color: #3b3b3b;
+    }
+    #two {
+        font-size: 32px;
+        font-weight: 500;
+        color: darkgray;
+    }
+    nav a {
+        text-decoration: none;
+        color: #3b3b3b;
+        font-size: 26px;
+    }
+    nav p {
+        margin: 0;
+        width: 16px;
+        height: 64px;
+        background-color: hsla(180, 70%, 80%, 1)
+    }
+    #grey_bg{
+        background-color: hsla(200, 10%, 85%, 1);
+        display: flex;
+    }
+    #grey_bg img{
+        width: 54%;
+        margin: 32px 24px;
+        object-fit: cover;
+    }
+    #grey_bg div{
+        margin-left: 24px;
+        margin-top: 10%;
+        display: flex;
+        flex-flow: column;
+        width: 30%;
+        
+    }
+    #grey_bg div h1{
+        font-size: 380%;
+        color: hsla(0, 0%, 25%, 1);
+        margin: 0;
+    }
+    #grey_bg div p{
+        margin: 20px 0 0 0;
+        font-size: 32px;
+        font-weight: 600;
+        color: hsla(0, 0%, 25%, 1);
+    }
+    #grey_bg div button{
+        font-size: 25px;
+        margin-top: 34px;
+        background-color: hsla(0, 0%, 25%, 1);
+        color: white;
+        padding: 17px;
+        width: 90%;
+    }
+    .left{
+        width: 58%;
+        border-right: 1px #a1a1a1 solid;
+        float: left;
+    }
+    .left img{
+        width: 93%;
+        margin: 32px 20px;
+    }
+    .left h1{
+        font-weight: 800;
+        margin: 0 24px 24px;
+        width: 90%;
+        font-size: 42px;
+        color: hsla(0, 0%, 25%, 1);
+
+    }
+    #zitat{
+        width: 90%;
+        margin-left: 24px;
+        font-size: 24px;
+        color: hsla(0, 0%, 25%, 1);
+    }
+    #quelle{
+        font-size: 19px;
+        width: 90%;
+        margin: 0px 0 52px 24px;
+        color: rgb(78, 71, 71);
+    }
+    .right{
+        width: 40%;
+        float: left;
+        margin: 10px 0 0 0;
+    }
+    .box{
+        margin: 3px 0 0 ;
+        display: flex;
+        border-bottom: #a1a1a1 1px solid;
+        color: rgb(78, 71, 71);
+    }
+
+    #grey{
+        background-color: hsla(200, 10%, 85%, 1);
+    }
+    .box img{
+        width: 33%;
+        margin: 16px 35px 16px 19px;
+        object-fit: cover;
+
+    }
+    .box h1{
+        font-size: 32px;
+    }
+    .box p{
+        font-size: 23px;
+    }
+    .box a{
+        text-decoration: none;
+        color: hsla(210, 100%, 60%, 1);
+        font-size: 22px;
+    }
+</style>
+<body>
+    <nav>
+        <div>
+            <img src="resources/images/ic-logo.svg" alt="">
+            <span id="one">COLMAR</span><span id="two">ACADEMY</span>
+        </div>
+        <div>
+        <a href="">On campus</a>
+        <p></p>
+        <a href="">Online</a>
+        <p></p>
+        <a href="">For companies</a>
+        <p></p>
+        <a href="">Sign in</a>
+        </div>
+    </nav>
+    <div id="grey_bg">
+        <img src="resources/images/banner.jpg" alt="">
+        <div>
+            <h1>Learn something <br> new everyday</h1>
+            <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit.</p>
+            <button>Start here</button>
+        </div>
+    </div>
+    <div id="white_bg">
+        <div class="left">
+            <img src="resources/images/information-main.jpg" alt="">
+            <h1>It doesn't hurt to keep practicing</h1>
+            <p id="zitat">"Curabiur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+            <p id="quelle">Emanuel, Sr Strategist at Hiring.com</p>
+        </div>
+        <div class="right">
+            <div class="box">
+                <img src="resources/images/information-orientation.jpg" alt="">
+                <div>
+                    <h1>Orientation date</h1>
+                    <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+                    <a href="">Read more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="resources/images/information-campus.jpg" alt="">
+                <div>
+                    <h1>Our campus</h1>
+                    <p>Find which campus is close by you</p>
+                    <a href="">Read more</a>
+                </div>
+            </div>
+            <div class="box" id="grey">
+                <img src="resources/images/information-guest-lecture.jpg" alt="">
+                <div>
+                    <h1>Our guest lecture</h1>
+                    <p>Join a keynote with Oliver Sack <br> about music in medical treatment</p>
+                    <a href="">Read more</a>    
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
