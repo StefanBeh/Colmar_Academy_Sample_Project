@@ -50,7 +50,7 @@
         background-color: hsla(180, 70%, 80%, 1)
     }
     #grey_bg{
-        background-color: hsla(200, 10%, 85%, 1);
+        background-color: hsla(200, 10%, 90%, 1);
         display: flex;
     }
     #grey_bg img{
@@ -94,7 +94,7 @@
         width: 93%;
         margin: 32px 20px;
     }
-    .left h1{
+    #head_writing{
         font-weight: 800;
         margin: 0 24px 24px;
         width: 90%;
@@ -127,7 +127,7 @@
     }
 
     #grey{
-        background-color: hsla(200, 10%, 85%, 1);
+        background-color: hsla(200, 10%, 90%, 1);
     }
     .box img{
         width: 33%;
@@ -145,6 +145,94 @@
         text-decoration: none;
         color: hsla(210, 100%, 60%, 1);
         font-size: 22px;
+    }
+    .grey_bg_two{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: hsla(200, 10%, 90%, 1);
+    }
+    #start{
+        margin: 62px 0;
+        font-size: 300%;
+        color: #3b3b3b;
+        font-weight: 800;
+        text-align: center;
+    }
+    #start_learning{
+        width: 100%;
+    }
+    .cardcontainer{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+
+    }
+    .grey_bg_two img{
+        width: 100%;
+    }
+    .grey_bg_two h1{
+        font-size: 200%;
+        color: #3b3b3b;
+        margin-left: 30px;
+    }
+    .card{
+        background-color: white;
+        margin: 6px 30px 26px 5px;
+        width: 26%;
+        padding-bottom: 30px;
+
+    }
+    .card p{
+        font-size: 140%;
+        color: #797979;
+        margin-left: 30px;
+    }
+    .white_bg_two{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: rgb(245, 247, 247);
+        border-bottom: #828282 1px solid;
+        padding-bottom: 32px;
+    }
+    .white_bg_two video{
+        width: 94%;
+        margin: 0 0 0 24px;
+        
+    }
+    .right_two{
+        width: 41%;
+        float: left;
+        margin: 10px 0 0 0;
+    }
+    .box_two{
+        margin: 3px 0 0 ;
+        display: flex;
+        border-bottom: #a1a1a1 1px solid;
+        color: rgb(78, 71, 71);
+    }
+    #head_writing_two{
+        margin: 24px 24px 24px;
+        width: 90%;
+        font-size: 35px;
+        color: hsla(0, 0%, 25%, 1);
+    }
+    footer{
+        background-color: rgb(245, 247, 247);
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+    }
+    footer div{
+        display: flex;
+        margin-right: 24px;
+    }
+    footer p{
+        margin-left: 20px;
+        font-size: 20px;
+        color:#3b3b3b;
     }
 </style>
 <body>
@@ -174,7 +262,7 @@
     <div id="white_bg">
         <div class="left">
             <img src="resources/images/information-main.jpg" alt="">
-            <h1>It doesn't hurt to keep practicing</h1>
+            <h1 id="head_writing">It doesn't hurt to keep practicing</h1>
             <p id="zitat">"Curabiur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
             <p id="quelle">Emanuel, Sr Strategist at Hiring.com</p>
         </div>
@@ -207,5 +295,102 @@
 
         </div>
     </div>
+    <div class="grey_bg_two">
+        <div id="start_learning">
+            <h1 id="start">Start learning</h1>
+        </div>
+        <div class="cardcontainer">
+            <div class="card">
+                <img src="resources/images/course-software.jpg" alt="">
+                <div>
+                    <h1>Software engineering</h1>
+                    <p>COURSES</p> 
+                    <p>Web Development, Mobile Development, iOT, APIs</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="resources/images/course-computer-art.jpg" alt="">
+                <div>
+                    <h1>Computer Art</h1>
+                    <p>COURSES</p> 
+                    <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="resources/images/course-design.jpg" alt="">
+                <div>
+                    <h1>Design</h1>
+                    <p>COURSES</p> 
+                    <p>User Experience Design, User Research, Visual Design</p>
+                </div>
+            </div>
+        </div>
+        <div class="cardcontainer">
+            <div class="card">
+                <img src="resources/images/course-data.jpg" alt="">
+                <div>
+                    <h1>Data</h1>
+                    <p>COURSES</p> 
+                    <p>Data Science, Big Data, SQL, Data Visualization</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="resources/images/course-business.jpg" alt="">
+                <div>
+                    <h1>Business</h1>
+                    <p>COURSES</p> 
+                    <p>Product Development, Business Development, Startup</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="resources/images/course-marketing.jpg" alt="">
+                <div>
+                    <h1>Marketing</h1>
+                    <p>COURSES</p> 
+                    <p>Analytics, Content Marketing, Mobile Marketing</p>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    <div class="white_bg_two">
+        <div id="start_learning">
+            <h1 id="start">Thesis exhibit</h1>
+        </div>
+        <div class="left">
+            <div>
+                <video src="resources/videos/thesis.mp4" controls></video>
+            </div>
+            <div>
+                <h1 id="head_writing_two">Reimagine urban</h1>
+                <p id="zitat">"Curabiur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+            </div>
+        </div>
+        <div class="right_two" >
+            <div class="box" style="background-color: rgb(207, 207, 208);">
+                <img src="resources/images/thesis-fisma.jpg" alt="">
+                <div>
+                    <h1>Fisma: Design and <br> Protoype</h1>
+                    <p>Designer showcase of new <br> prototype product</p>
+                </div>
+            </div>
+            <div class="box" >
+                <img src="resources/images/thesis-now-and-then.jpg" alt="">
+                <div>
+                    <h1>Now and then</h1>
+                    <p>Research study about New York</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+<footer>
+    <div>
+        <p>2016 Colmar Academy. All rights reserved</p>
+    </div>
+    <div>
+        <p>Terms</p>
+        <p>Privacy</p>
+    </div>
+</footer>
 </html>
